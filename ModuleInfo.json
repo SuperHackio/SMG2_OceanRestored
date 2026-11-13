@@ -1,0 +1,54 @@
+{
+  "Name": "SMG2 Ocean Restored",
+  "Author": "Super Hackio",
+  "Description": "Restores several Ocean related objects that were removed from SMG2 that were present in SMG1.",
+  "RequiredAPIs": [ "Syati_ClassExtensions_API" ],
+  "SupportedGames": [ "SB4" ],
+
+  "ModuleData": [
+    {
+      "NameObjFactory": [
+        {
+          "Name": "OceanBowl",
+          "Function": "createExtActor<OceanBowl>",
+          "Include": "Game/Map/OceanBowl.h"
+        },
+        {
+          "Name": "OceanRing",
+          "Function": "createExtActor<OceanRing>",
+          "Include": "Game/Map/OceanRing.h"
+        }
+      ],
+      "ClassExtensions": [
+        {
+          "ClassName": "WaterAreaHolder",
+          "FuncOrVar": "s32 mOceanBowlNum;",
+          "HookAddr": "0x8045A4D8",
+          "Include": "Game/Map/WaterAreaHolder.h",
+          "Extern": ""
+        },
+        {
+          "ClassName": "WaterAreaHolder",
+          "FuncOrVar": "OceanBowl** mOceanBowls;",
+          "HookAddr": "0x8045A4D8",
+          "Include": "Game/Map/WaterAreaHolder.h",
+          "Extern": "class OceanBowl;"
+        },
+        {
+          "ClassName": "WaterAreaHolder",
+          "FuncOrVar": "s32 mOceanRingNum;",
+          "HookAddr": "0x8045A4D8",
+          "Include": "Game/Map/WaterAreaHolder.h",
+          "Extern": ""
+        },
+        {
+          "ClassName": "WaterAreaHolder",
+          "FuncOrVar": "OceanRing** mOceanRings;",
+          "HookAddr": "0x8045A4D8",
+          "Include": "Game/Map/WaterAreaHolder.h",
+          "Extern": "class OceanRing;"
+        }
+      ]
+    }
+  ]
+}
