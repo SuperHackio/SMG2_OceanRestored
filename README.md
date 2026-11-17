@@ -33,8 +33,8 @@ It is adviced to reference the [template mod](https://youtu.be/GSz7fjOaZf0) for 
 | Obj_arg2 | Lower wave height. Default 80. Some presets to use: 20 for low waves, 50 for medium waves and 80 for high waves. |
 | Obj_arg3 | Upper wave height. Default 100. Some presets to use: 30 for low waves, 80 for medium waves and 100 for high waves. |
 | Obj_arg7 | Low distance. The distance from Mario at which a segment will use the low model to save performance. Default 13000. |
-| point_Arg0 | Flow rate. The speed at this Path Point at which Mario is being pushed around when swimming inside. Does not work on the surface. If set, Mario also cannot swim against the flow of the water anymore. |
-| point_Arg1 | Ring width. The width of the ring and halfpipe at this Path Point. The math behind this takes the current and next path point into consideration, however is too complex to explain. It's best to trial and error. Try a value like 10 first. |
+| point_arg0 | Flow rate. The speed at this Path Point at which Mario is being pushed around when swimming inside. Does not work on the surface. If set, Mario also cannot swim against the flow of the water anymore. |
+| point_arg1 | Ring width. The width of the ring and halfpipe at this Path Point. The math behind this takes the current and next path point into consideration, however is too complex to explain. It's best to trial and error. Try a value like 10 first. |
 
 ### OceanRingAndFlag
 Not yet implemented.
